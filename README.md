@@ -1,16 +1,27 @@
-# menv - macOS Environment Variable Manager
+<!-- PROJECT LOGO -->
+<div align="center">
+  <h1 align="center">menv</h1>
+  <p align="center">A command line tool to manage environment variables on macOS</p>
+</div>
 
-A comprehensive CLI tool to manage user-scope environment variables on macOS, ensuring they are available to both GUI applications and terminal sessions.
+<!-- SHIELDS -->
+<div align="center">
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+
+</div>
 
 ## 🚀 Overview
 
-`menv` simplifies environment variable management on macOS by handling the complexity of making variables available across different contexts:
+`menv` simplifies user-scope environment variable management on macOS by handling the complexity of making variables available to both GUI applications and terminal sessions across different contexts:
 
 - **GUI Applications** (VS Code, browsers, etc.) via `launchctl`
 - **Terminal Sessions** (bash, zsh, fish) via shell profiles
 - **Persistent across reboots** via LaunchAgent plists and profile files
-
-Unlike system-wide tools that require administrator privileges, `menv` focuses exclusively on user-scope variables, making it safe and easy to use.
 
 ## 📋 Table of Contents
 
@@ -443,6 +454,14 @@ menv list | grep NON_EXISTENT_VAR
 - **Safety**: Only manages user-scope variables, never requires sudo
 - **Backups**: Automatically creates backups before modifying files
 
+## 💰​ Donate
+
+If you are using the tool but are unable to contribute technically, please consider promoting it and donating an amount that reflects its value to you. You can do so either via PayPal
+
+[![Donate via PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=JVG7PFJ8DMW7J)
+
+or via [GitHub Sponsors](https://github.com/sponsors/thgossler).
+
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -453,7 +472,7 @@ menv list | grep NON_EXISTENT_VAR
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙋 Support
 
@@ -463,3 +482,16 @@ If you encounter issues:
 2. Run with `--verbose` to see detailed output
 3. Check that you're on a supported macOS version
 4. Open an issue with detailed information about your environment
+
+
+<!-- MARKDOWN LINKS & IMAGES (https://www.markdownguide.org/basic-syntax/#reference-style-links) -->
+[contributors-shield]: https://img.shields.io/github/contributors/thgossler/menv.svg
+[contributors-url]: https://github.com/thgossler/menv/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/thgossler/menv.svg
+[forks-url]: https://github.com/thgossler/menv/network/members
+[stars-shield]: https://img.shields.io/github/stars/thgossler/menv.svg
+[stars-url]: https://github.com/thgossler/menv/stargazers
+[issues-shield]: https://img.shields.io/github/issues/thgossler/menv.svg
+[issues-url]: https://github.com/thgossler/menv/issues
+[license-shield]: https://img.shields.io/github/license/thgossler/menv.svg
+[license-url]: https://github.com/thgossler/menv/blob/main/LICENSE
