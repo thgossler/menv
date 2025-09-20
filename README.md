@@ -38,7 +38,7 @@
 
 1. **Download the script:**
    ```bash
-   curl -O https://raw.githubusercontent.com/yourusername/env-scripts/main/menv.sh
+   curl -O https://raw.githubusercontent.com/thgossler/menv/refs/heads/main/menv.sh
    chmod +x menv.sh
    ```
 
