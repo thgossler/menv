@@ -2,14 +2,13 @@
 
 # menv - Manage Environment Variables for macOS
 # A CLI tool to manage user-scope environment variables for GUI apps and shells
-# Similar to Windows Environment Variables dialog but as a command-line tool
 
 set -eu
 
 # Script information
 readonly SCRIPT_NAME="menv"
-readonly SCRIPT_VERSION="1.0.0"
-readonly SCRIPT_DESCRIPTION="Manage Environment Variables for macOS"
+readonly SCRIPT_VERSION="0.1.2"
+readonly SCRIPT_DESCRIPTION="Manage user environment variables on macOS"
 
 # Color codes for output
 readonly RED='\033[0;31m'
